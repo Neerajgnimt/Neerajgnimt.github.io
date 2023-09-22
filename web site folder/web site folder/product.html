@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"><!--we have added this view port tag and set initial scale to 1 so that our side shoudl be adjustable according to different devices especially for mobile devices-->
+        <title>All Products - RedStore</title>
+        <link rel="stylesheet" href="CSS/style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <!--making navigation bar consist of logo and menu links-->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/neerajlogo.png" alt="RedStore logo" width=125px>
+                </div>
+    
+                <!--menu-->
+                 <nav> 
+                    <ul id="MenuItems"><!--use this id in js-->                       
+                         <li><a href="indax.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="#about" class="ds-bar-item w3-button">About</a></li>
+                        <li><a href="account.html">Contact</a></li>
+                        <li><a href= "product-details.html">Product-details</a></li>
+                    </ul>
+                </nav>
+                <a href= "cart.html"> <img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <div class="small container">
+        <div class="row row-2">
+            <h2>All Products
+
+            </h2>
+             <select>
+                 <option>Default Sorting</option>
+                 <option>Sort by Price</option>
+                 <option>Sort by Popularity</option>
+                 <option>Sort by Sale</option>
+             </select>
+        </div>
+
+         <!--This is the same class which already have index.html consisting of 4 columns-->
+         <div class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-1.jpg">
+                    <h4>Red Printed T-shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-2.jpg">
+                    <h4>Arrow</h4>
+                    <p> Men Brown Leather Ridges 2.0 Formal Derbys Shoes</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$40.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-3.jpg">
+                    <h4>Tommy Hilfiger</h4>
+                    <p> Men Mid-Rise Dad Fit Baggy Jeans</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$80.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-4.jpg">
+                    <h4>Tom and Jerry </h4>
+                    <p> Mess with Me Men's Oversized T-shirtt</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$60.00</p>
+                </div>
+                <h2 class="title">Latest Products</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/product-5.jpg">
+                        <h4>Nike</h4>
+                        <p> Men Air Max VG-R Sneakers</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-6.jpg">
+                        <h4>RTG Men's T-Shirt</h4>
+                    <p>PUMA X Crew-Neck T-Shirt</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$40.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-7.jpg">
+                        <h4>Nike Cotten Sport Stocks</h4>
+                         <p>Men & Women Ankel Lenght (Pack3)</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$80.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/product-8.jpg">
+                        <h4>Armani Exchange</h4>
+                        <p> Analogue Multi Function Watch AX2513</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>$60.00</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/product-9.jpg">
+                            <h4>Fossil</h4>
+                            <p>Men Black Smart Watch FTW4061</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/product-10.jpg">
+                            <h4>Louis Vuitton Nike air force 1:</h4>
+                            <p>Release Time,Price, Raffle</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>$70.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/product-11.jpg">
+                            <h4>Puma</h4>
+                        <p> Men Catel Sneakers</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>$80.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/product-12.jpg">
+                            <h4>ADIDAS</h4>
+                            <p>Men 3-Stripes Casual Joggers</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>$60.00</p>
+                        </div>
+            </div>
+          </div>
+`       <!--add page buttons in small container section-->
+       <div class="page-btn">
+           <span>1</span><!--no of pages-->
+           <span>2</span>
+           <span>3</span>
+           <span>4</span>
+           <span>&#8594;</span><!--and arrow in the end-->
+
+       </div>
+    </div>
+ 
+    <!-------footer------->
+    <div class="footer2" id="about">
+        <div class="container"><!-- it will follow same styling as of header-->
+            <div class="row">
+                
+                <!--it contains 4 columns col1 contains text and col2 contain image col3 contains useful links and col4 contains social media links-->
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios mobile phone.</p>
+                   
+                   <!---add images of play store and appstore in 1st column-->
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>   
+                
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="images/neerajlogo2.png">
+                    <p>Our purpose is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <!--add horizontal line and copyright text along with clickable link-->
+            <hr>
+            <a href="indax.html" class="copyright">Copyright 2020   - Made with ❤️ by Neeraj</a>
+        </div>
+    </div>         
+
+    <!-----------------JS----------------------->
+    <script>
+        //declare variable MenuItems which take ul having id "MenuItems"
+        
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";//by default, we have set menu or dropdown menu height to 0px, means it is close by default
+        
+        function menutoggle()//this is the function which we have called above in nav which works on small devices and users click on it
+        {
+            if (MenuItems.style.maxHeight =="0px")//when user click on it and if it is closed or its height is 0px, then it will open or it should have heigt of 200px upon clicking
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else//if user not clicked or it has already opened, then it will upon clicking again closed
+            {
+                MenuItems.style.maxHeight = "0px" 
+            }
+        
+        }
+    </script>    
+    
+    </body>
+
+</html>
